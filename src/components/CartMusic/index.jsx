@@ -4,8 +4,8 @@ import Link from 'next/link'
 
 import { BsFillFileEarmarkPlayFill, BsFillStarFill, BsFillTrashFill } from "react-icons/bs";
 
-
 import {connect} from 'react-redux'
+
 
 function CartMusic({music, dispatch}){
 
@@ -39,21 +39,23 @@ function CartMusic({music, dispatch}){
       <audio src={music.preview} controls="controls"/>
         
       <NavCart>
-        {asPath === '/' &&
+        { asPath === '/' &&
           <button alt="Adicionar aos favoritos"
-          onClick={()=>dispatch(addToFavorites(music))}
+            onClick={()=>dispatch(addToFavorites(music))}
           >
             <BsFillStarFill/>
           </button>
         }
         <Link href={music.link}>
-          <button alt="Ir para pagina do deezer"><BsFillFileEarmarkPlayFill/></button>
+          <button alt="Ir para pagina do deezer">
+            <BsFillFileEarmarkPlayFill/>
+          </button>
         </Link>
-        {asPath === '/favoritos' && 
+        { asPath === '/favoritos' && 
           <button alt="Excluir"
             onClick={()=>dispatch(deleteToFavorites(music))}
           >
-          <BsFillTrashFill/>
+            <BsFillTrashFill/>
           </button>}
       </NavCart>
     </Cart>

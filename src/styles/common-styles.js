@@ -12,5 +12,5 @@ export const Main = styled.main`
 export const ContainerMusic = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 3rem;
+  grid-gap: 2.5rem;
 `

@@ -18,7 +18,6 @@ export default function Home({musicList}) {
 
   const [musics, setMusics] = useState(musicFormated);
   const [search, setSearch] = useState('');
-  const [nextPage, setNextPage] = useState(musicList.nextPage);
 
 
   const musicFiltered = musics.filter((music) => 
@@ -26,6 +25,7 @@ export default function Home({musicList}) {
     music.title.toLowerCase().includes(search.toLowerCase()) ||
     music.album.toLowerCase().includes(search)
   )
+
 
   return (
     <>
@@ -42,7 +42,7 @@ export default function Home({musicList}) {
       </SearchInput>
       <Main>
         <ContainerMusic>
-         {musicFiltered.map( music => (
+         {musicFiltered.map(music => (
            <CartMusic key={music.id} music={music}/>
          ))}
         </ContainerMusic>

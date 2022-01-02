@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import {Main, ContainerMusic} from '../../styles/common-styles'
 import Head from 'next/head'
 

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Cart = styled.div`
-  width: 20rem;
+  min-width: 15rem;
   height: 22rem;
   padding: 0.5rem;
 
