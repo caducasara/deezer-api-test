@@ -1,34 +1,92 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Deezer API
 
-## Getting Started
+Aplicação feita consumindo a API do deezer, onde o usuário pode acessar a playlist das musicas mais tocadas no mundo, acessar a pagina original da deezer e ter mais informações sobre, adicionar a uma playlist de favoritos e escutar uma prévia da musica.
 
-First, run the development server:
+<br>
+
+## PAGINA HOME:
+Nesta página o usuário tem acesso as musicas mas tocas Mundialmente no Deezer (Top Worldwide).
+
+<h4>FUNCIONALIDADES:</h4>
+
+
+- Bucar musicas no campo de texto através do nome do álbum, nome da musica e nome do artista;
+
+
+- Adicionar musicas na pagina de favoritos;
+
+
+- Escutar a prévia da musica;
+
+
+- Acessar a pagina da musica no Deezer, onde se encontra mais informações sobre e pode ouvir a musica completa;
+
+<br>
+
+## PAGINA FAVORITOS:
+Nesta pagina ficam as musicas que o usuário selecionou na pagina home.
+
+<h4>FUNCIONALIDADES:</h4>
+
+
+- Ter uma lista das musicas selecionadas na pagina home;
+
+
+- Excluir musicas dos favortios;
+
+
+- Escutar a prévia da musica;
+
+
+- Acessar a pagina da musica no Deezer, onde se encontra mais informações sobre e pode ouvir a musica completa;
+
+<br>
+
+## INSTALAÇÃO E INICIALIZAÇÃO DO PROJETO:
+
+<h4>CLONE DO PROJETO:</h4>
+
+O primeiro passo é clonar o repositório na sua maquina através do git, para isso é necessário ter o git instalado na sua maquina e rodar o seguinte comando no gitbash:
+
+```bash
+git clone LINK_DO_REPOSITÓRIO
+```
+
+<br>
+
+<h4>INSTALANDO DEPENDENCIAS:</h4>
+
+Após ter clonado o repositório na sua maquina entre na pasta do projeto com o seu terminal e rode os comandos:
+
+```bash
+cd DIRETÓRIO_DA_PASTA
+```
+
+<br>
+
+Após estrar na pasta rode o comando para instalar as dependências dp projeto.
+Caso use o yarn use:
+````bash
+yarn
+````
+Caso use o npm use:
+````bash
+npm install
+````
+<br>
+
+<h4>INICINDO A APLICAÇÂO:</h4>
+
+Para iniciar a aplicação e poder acessar ela no seu browser rode o seguinte comando no terminal:
 
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<br>
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+<h4>ACESSANDO O PROJETO NO BROWSER:</h4>
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Depois de ter feito todos os passos anteriores basta acessar o link que o servidor ira exibir no terminal, geralmente é http://localhost:3000/. Esse link pode variar, então recomendo que confira o link que será exibido no seu terminar e cole este link no seu browser de preferencia.
